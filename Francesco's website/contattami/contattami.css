@@ -1,0 +1,63 @@
+form {
+  display: grid;
+  height: 80vh;
+  margin: 5rem;
+  grid-template-columns: 20rem 15rem;
+  grid-template-rows: 5rem 2rem 2rem 2rem 2rem 2rem 7rem 2rem;
+  grid-gap: 10px 10px;
+}
+
+[for="title"] {
+  color: red;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  
+}
+
+[for="first-name"] {
+  grid-area: 3 / 1;
+}
+
+[for="last-name"] {
+  grid-area: 4 / 1;
+}
+
+[for="email"] {
+  grid-area: 5 / 1;
+  
+}
+
+[for="agree-terms"] {
+  grid-area: 6 / 1;
+  margin:auto
+  
+}
+
+[type="checkbox"] {
+  grid-area: 6 / 2;
+  justify-self: start;
+
+}
+
+[type="submit"]{
+  grid-area: 8 / 1
+}
+
+[type="email"]{
+  grid-area: 5 / 2
+}
+
+#title{
+  grid-area: 2 / 1
+}
+
+#last-name{
+  grid-area: 4 / 2
+}
+#first-name{
+  grid-area: 3 / 2
+}
+
+textarea{
+  grid-area: 7 / 1;
+}
